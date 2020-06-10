@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glass-Mont Kft.</title>
+    
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body>
+    <div class="navigation">
+        <a id="logo" href="#">GLASS-MONT</a>
+        <nav>
+            <a class="hide-desktop" href="#"><img src="icons/menu-white-24dp.svg" alt="Togle menu" id="menu"></a>
+            <ul class="hide-mobile show-desktop" id="nav">
+                <li id="exit" class="exit-menu hide-desktop"><img src="icons/close-white-24dp.svg" alt="Exit menu"></li>
+                <li><a href="#">Magunkról</a></li>
+                <li><a href="#">Megoldásaink</a></li>
+                <li><a href="#">Munkáink</a></li>
+                <li><a href="#">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <header>
+        <h1>
+            Üvegezés mesterfokon
+        </h1>
+        <p>
+            Ipari építészeti üvegezés 1993 óta
+        </p>
+    </header>
+
+    <section class="bw">
+        <div class="blackbg">
+            <blockquote>&#x201E;Az üveg olyan folyadék, melynek viszkozitása meghaladja az 1013 poise-t.&#x201D;</blockquote>
+            <p class="quote">Cambridge enciklopédia</p>
+            <div class="ebbol">
+                <p>Ebből az anyagból építünk mi 88 tonna víznyomásnak ellenálló üvegtavakat, átlátszó, de biztonságos embertömeget magán viselő üvegjárdákat, ebből az anyagból készítünk mesekastélyt és csodahajót.</p>
+            </div>
+        </div>
+
+        <div class="elkepzeles">
+            <h2>Bármilyen extrém elképzelése van, azt mi megvalósítjuk, és együtt csodálhatjuk büszkén, mit tud az a folyadék, melyet a köznyelv csak üvegnek hív.</h2>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="contact-inner">
+            <h2>Lépjen kapcsolatba velünk</h2>
+
+            <div>
+                <form action="/action_page.php">
+                    <div class="grid-contact" >
+                        <div>
+                            <label for="nev">Név</label>
+                            <input type="text" id="nev" name="firstname">
+                        </div>
+                        <div>
+                            <label for="nev">Cégnév</label>
+                            <input type="text" id="cegnev" name="firstname">
+                        </div>
+                        <div>
+                            <label for="nev">Telefonszám</label>
+                            <input type="text" id="telefon" name="firstname">
+                        </div>
+                        <div>
+                            <label for="nev">E-mail-cím</label>
+                            <input type="text" id="email" name="firstname">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject">Üzenet</label>
+                        <textarea id="subject" name="subject" style="height:150px"></textarea>
+                        <input type="submit" value="Küldés">
+                    </div>
+                    
+                </form>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+        <h2 class="elerhetoseg">Elérhetőségünk</h2>
+        <div id=elerhetoseg>
+            <p>GLASS-MONT Üvegipari és Kereskedelmi Kft.</p>
+            <img class="footer-icon" src="icons/location_on-white-24dp.svg" alt="locatiob icon"><p>2100 Gödöllő, Blaháné utca 6.</p>
+            <img class="footer-icon" src="icons/phone-white-24dp.svg" alt="phone icon"><p>+36 (28) 512 260</p>
+            <img class="footer-icon" src="icons/mail-white-24dp.svg" alt="e-mail icon"><p>info@glassmont.hu</p>
+        </div>
+    </footer>
+
+    <div id="end">
+        <p>© 2020 Glass-Mont Kft.</p>
+    </div>
+
+    <script>
+        var menu = document.getElementById('menu')
+        var nav = document.getElementById('nav')
+        var exit = document.getElementById('exit')
+
+        menu.addEventListener('click', function(e){
+            nav.classList.toggle('hide-mobile');
+            e.preventDefault();
+        });
+
+        exit.addEventListener('click', function(e){
+            nav.classList.add('hide-mobile');
+            e.preventDefault();
+        });
+    </script>
+
+</body>
+</html>

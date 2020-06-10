@@ -1,0 +1,482 @@
+/* FONTS by GOOGLE */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@200;400;600&family=Raleway:wght@200;400;600&display=swap');
+
+/* FONTS by GOOGLE
+
+font-family: 'Playfair Display', serif;
+font-family: 'Raleway', sans-serif;
+
+FONTS by GOOGLE */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+body  {
+  font-family: 'Raleway', sans-serif;
+  font-size: medium;
+  background-color: #FDFEFF;
+  margin: 0;
+  text-align: center;
+  line-height: 2em;
+  color: #00171F;
+}
+
+h2  {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  line-height: 1.3em;
+  position: relative;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00171F;
+  margin: 0;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+#logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 1.3em;
+  color: aliceblue;
+  margin: 14px 15px 15px;
+}
+
+nav img {
+  margin: 15px;
+  margin-top: 21px;
+  width: 24px;
+}
+
+nav ul  {
+  background-color: rgb(16, 29, 34);
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 65%;
+  height: 100%;
+  text-align: left;
+  padding: 0;
+  z-index: 3;
+}
+
+#exit  {
+  text-align: right;
+  margin-top:   0;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: #FDFEFF;
+  display: block;
+  padding: 1em 1em;
+}
+
+nav ul li a:hover {
+  background-color: rgb(38, 57, 63);
+}
+
+nav ul li a:active {
+  background-color: rgb(21, 39, 44);
+}
+
+.hide-mobile  {
+  display: none;
+}
+
+header  {
+  background-image: url(images/patrick-tomasso-gMes5dNykus-unsplash.jpg);
+  background-color: #FDFEFF;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  font-weight: 200;
+}
+
+header h1 {
+  font-family: 'Playfair Display';
+  font-size: 26px;
+  font-weight: 400;
+  padding-top: 2.5em;
+  margin: 0;
+}
+
+.blackbg  {
+  display: flex;
+  background-color: #00171F;
+  color: #FDFEFF;
+  margin: 0;
+  text-align: left;
+  margin: 0;
+  padding: 2.5em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.blackbg blockquote {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  line-height: 1.3em;
+}
+
+.ebbol p  {
+  position: relative;
+}
+
+.ebbol p:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 50px;
+  background: white;
+  top: -0.3em;
+}
+
+.quote  {
+  font-size: 12px;
+  text-align: right;
+  padding-right: 3.5em;
+  color: #A8A8A8;
+  margin-bottom: 2em;
+}
+
+.elkepzeles {
+  background-image: url(images/joel-filipe-ZMRMFULofus-unsplash.jpg);
+  background-color: #FDFEFF;
+  height: 400px;
+  background-size: cover;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.elkepzeles h2  {
+  font-size: 20px;
+  text-align: left;
+  margin: 0 0 0 4em;
+  padding: 2.5em;
+  background-color: #FDFEFF;
+}
+
+.elkepzeles h2:before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  width: 50px;
+  background: black;
+  top: 1.7em;
+}
+
+.contact  {
+  padding: 2.5em;
+  text-align: left;
+  color: #797979;
+}
+
+.contact h2 {
+  padding-bottom: 1.5em;
+  color: #00171F;
+  text-align: center;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #D5D5D5;
+  background-color: #F9FDFF;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  resize: vertical;
+  font-size: medium;
+}
+
+input[type=submit] {
+  background-color: #00171F;
+  color: #F9FDFF;
+  font-size: medium;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(38, 57, 63);
+}
+
+footer  {
+  background-color: #00171F;
+  color: #FDFEFF;
+  margin: 0;
+  padding: 2.5em;
+}
+
+footer h2 {
+  padding-bottom: 1.5em;
+}
+
+.footer-icon {
+  display: none;
+}
+
+#end  {
+  font-size: 12px;
+}
+
+@media only screen and (min-width: 600px) {
+  header  {
+    background-size: cover;
+    background-position: center;
+    margin-top: 3em;
+  }
+  
+  header h1 {
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    padding-bottom: 0.5em;
+    padding-top: 1.5em;
+  }
+
+  header p  {
+    font-size: 18px;
+  }
+  
+}
+
+@media only screen and (min-width: 760px) {
+
+  .navigation {
+    padding: 0 2em;
+  }
+
+  .hide-desktop {
+    display: none;
+  }
+
+  .show-desktop {
+    display: flex;
+  }
+
+  nav ul  {
+    background-color: rgb(16, 29, 34);
+    position: static;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 0;
+    text-align: left;
+    padding: 0;
+    z-index: 3;
+  }
+
+  nav ul li a {
+    color: #FDFEFF;
+    display: block;
+    padding: 15px 15px 14px;
+  }
+
+  nav ul li a:hover {
+    background-color: rgb(38, 57, 63);
+    border-bottom: solid 3px rgb(21, 39, 44);
+  }
+
+  .bw  {
+   display: grid;
+   grid-template-columns: 60% 40%;
+   align-items: center;
+  }
+
+  .blackbg  {
+    padding: 3em 5em 3em 3em;
+    height: 350px;
+    align-items: center;
+  }
+
+  .elkepzeles {
+    align-items: center;
+    height: auto;
+    background-image: none;
+    background-color: #FDFEFF;
+    background-size: cover;
+  }
+
+  .elkepzeles h2  {
+    padding: 3em;
+    margin: 0;
+  }
+
+  .elkepzeles h2:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 50px;
+    background: black;
+    top: 2.7em;
+  }
+
+  .contact  {
+    background-image: url(images/joel-filipe-ZMRMFULofus-unsplash.jpg);
+    background-color: #FDFEFF;
+    background-size: cover;
+    text-align: left;
+    padding: 3em;
+    color: #797979;
+  }
+
+  .contact-inner  {
+    background-color: #FDFEFF;
+    padding: 3em;
+    margin: 3em;
+  }
+
+  footer  {
+    display: flex;
+    justify-content: space-evenly;
+    vertical-align: middle;
+    padding: 5em;
+  }
+
+  .elerhetoseg  {
+    display: flex;
+    align-items: center;
+    font-weight: 200;
+    text-align: center;
+    vertical-align: middle;
+    padding: 0;
+  }
+
+  #elerhetoseg  {
+    text-align: left;
+  }
+
+  .footer-icon {
+    display: block;
+    float: left;
+    padding-top: 3px;
+    padding-right: 6px;
+  }
+}
+
+
+@media only screen and (min-width: 1024px) {
+  
+  .navigation {
+    padding: 0 5em;
+  }
+
+  header  {
+    height: 500px;
+    text-align: left;
+    background-position-y: 40%;
+    padding-top: 3.5em;
+  }
+
+  header h1, header p {
+    padding-left: 200px;
+  }
+
+  .blackbg  {
+    padding-left: 5em;
+  }
+
+  .bw {
+    padding-right: 5em;
+  }
+
+  .contact-inner {
+    margin: 10em 10em;
+  }
+
+  .grid-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 3em;
+  }
+}
+
+@media only screen and (min-width: 1300px) {
+
+  .navigation {
+    padding: 0 10em;
+  }
+
+  header  {
+    height: 500px;
+    text-align: left;
+    margin-top: 11em;
+  }
+
+  header h1 {
+    padding-left: 250px;
+    padding-top: 0;
+  }
+
+  header p {
+    padding-left: 250px;
+  }
+
+  .blackbg {
+    padding: 10em 0 10em 10em;
+  }
+
+  .contact  {
+    background-image: none;
+  }
+}
