@@ -143,6 +143,9 @@ body #enteriorview {
 body #riportview {
   display: none;
 }
+body #travelview {
+  display: none;
+}
 body .up {
   text-align: center;
 }
