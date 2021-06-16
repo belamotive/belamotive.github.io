@@ -53,6 +53,8 @@ document.querySelector('#travel').addEventListener('click', () => {
 document.querySelector('#portfolio').addEventListener('click', () => {
   foodview.style.display = 'none';
   enteriorview.style.display = 'none';
+  riportview.style.display = 'none';
+  travelview.style.display = 'none';
   scrollTo('portfolio');
 })
 
