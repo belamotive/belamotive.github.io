@@ -140,6 +140,9 @@ body #foodview {
 body #enteriorview {
   display: none;
 }
+body #riportview {
+  display: none;
+}
 body .up {
   text-align: center;
 }
