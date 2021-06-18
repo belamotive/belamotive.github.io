@@ -123,23 +123,23 @@ body header .contact .contactbox form {
   body header .contact .contactbox form {
     width: 85%;
   }
-  body header .contact .contactbox form textarea {
-    height: 150px;
-    resize: none;
-  }
-  body header .contact .contactbox .form-control {
-    background-color: #f0f0f0;
-    color: #171219;
-    background-clip: padding-box;
-    border: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-  }
-  body header .contact .contactbox .form-control:focus {
-    outline: none;
-    box-shadow: none;
-  }
+}
+body header .contact .contactbox textarea {
+  height: 150px;
+  resize: none;
+}
+body header .contact .contactbox .form-control {
+  background-color: #f0f0f0;
+  color: #171219;
+  background-clip: padding-box;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+body header .contact .contactbox .form-control:focus {
+  outline: none;
+  box-shadow: none;
 }
 body header .contact .contactbox button {
   background-color: #ffbd00;

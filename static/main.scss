@@ -165,27 +165,27 @@ body {
 
           form {
             width: 85%;
-
-            textarea {
-              height: 150px;
-              resize: none;
-            }
           }
+        }
 
-          .form-control {
-            background-color: #f0f0f0;
-            color: $black;
-            background-clip: padding-box;
-            border: none;
-            -webkit-appearance: none;
-            -moz-appearance: none;
-            appearance: none;
-          }
+        textarea {
+          height: 150px;
+          resize: none;
+        }
 
-          .form-control:focus {
-            outline: none;
-            box-shadow: none;
-          }
+        .form-control {
+          background-color: #f0f0f0;
+          color: $black;
+          background-clip: padding-box;
+          border: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+        }
+
+        .form-control:focus {
+          outline: none;
+          box-shadow: none;
         }
 
         button {
