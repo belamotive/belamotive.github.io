@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Knewave&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Knewave&display=swap");
 
 $white: #fcfcfc;
 $black: #171219;
@@ -9,28 +9,26 @@ $red: #e05263;
 $blue: #5438dc;
 $lightblue: #7f72f8;
 $mango: #ffbd00;
+$mangolight: #e0a500;
 
 body {
   font-family: "Poppins", sans-serif;
   color: $black;
 
-  .black {
-    background-color: $black;
-  }
-
   header {
-    transition: 0.7s;
+    position: relative;
+    transition: 700ms;
 
     background-image: url("img/hero/bp-nbu-bankuti--5.jpg");
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    
+
     background-size: cover;
     background-position: center;
-    border-radius: 0 0 0.5rem 0.5rem;
-    
-    height: 80vh;
+    background-repeat: no-repeat;
+
+    height: 100vh;
 
     .navbar-brand {
       color: $black;
@@ -38,8 +36,12 @@ body {
     }
 
     .navbar {
-      background: rgb(255,255,255);
-      background: linear-gradient(180deg, rgba(255,255,255,0.9) 0%,rgba(255,255,255,0) 100%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
       transition: 0.5s; /* Adds a transition effect when the padding is decreased */
       position: fixed; /* Sticky/fixed navbar */
       width: 100%;
@@ -54,7 +56,7 @@ body {
       }
 
       .nav-link:hover {
-        color: $blue;
+        color: $lightblack;
       }
 
       .dropdown-toggle {
@@ -99,15 +101,111 @@ body {
 
       padding: 0.1rem 2rem;
     }
+
+    .arrow {
+      position: absolute;
+      bottom: 45px;
+      left: 50%;
+      transform: translate(-50%);
+
+      animation: MoveUpDown 1.5s linear infinite;
+    }
+
+    .contact {
+      background-color: $white;
+
+      .contactbox {
+        height: 100vh;
+
+        .row {
+          height: 100%;
+        }
+
+        .title {
+          .row {
+            height: auto;
+          }
+        }
+
+        .list-group {
+          text-align: center;
+        }
+        .list-group-item {
+          padding: .5rem 1rem;
+          color: $black;
+          text-decoration: none;
+          background-color: none;
+          border: none;
+
+          .list-group-horizontal {
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+
+        a {
+          text-decoration: none;
+        }
+
+        .logo {
+          width: 20px;
+          height: 20px;
+          margin: 0 8px;
+        }
+
+        form {
+          width: 100%;
+        }
+
+        @media screen and (min-width: 600px) {
+          img {
+            height: 100vh;
+          }
+
+          form {
+            width: 85%;
+
+            textarea {
+              height: 150px;
+              resize: none;
+            }
+          }
+
+          .form-control {
+            background-color: #f0f0f0;
+            color: $black;
+            background-clip: padding-box;
+            border: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+          }
+
+          .form-control:focus {
+            outline: none;
+            box-shadow: none;
+          }
+        }
+
+        button {
+          background-color: $mango;
+          color: $white;
+          border: none;
+        }
+
+        button:hover {
+          background-color: $mangolight;
+        }
+      }
+    }
   }
 
   main {
     background-color: $white;
-    padding-bottom: 5px;
   }
 
   .main {
-
     background-color: $black;
     color: $white;
     text-align: center;
@@ -115,11 +213,15 @@ body {
   }
 
   .title {
-    padding: 10vh 0 5vh;
+    padding: 15vh 0 5vh;
     text-align: center;
 
     h1 {
-      font-size: 4rem;
+      font-size: 300%;
+    }
+
+    .gray {
+      color: $lightblack;
     }
 
     .titlelinks {
@@ -133,10 +235,6 @@ body {
 
       a:hover {
         color: $lightblue;
-      }
-  
-      .gray {
-        color: $lightblack;
       }
     }
   }
@@ -196,9 +294,21 @@ body {
     display: none;
   }
 
+  #contactview {
+    display: none;
+  }
+
   .up {
     text-align: center;
   }
+}
 
-
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: 35px;
+  }
+  50% {
+    bottom: 45px;
+  }
 }

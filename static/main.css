@@ -5,19 +5,17 @@ body {
   font-family: "Poppins", sans-serif;
   color: #171219;
 }
-body .black {
-  background-color: #171219;
-}
 body header {
-  transition: 0.7s;
+  position: relative;
+  transition: 700ms;
   background-image: url("img/hero/bp-nbu-bankuti--5.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   background-position: center;
-  border-radius: 0 0 0.5rem 0.5rem;
-  height: 80vh;
+  background-repeat: no-repeat;
+  height: 100vh;
 }
 body header .navbar-brand {
   color: #171219;
@@ -40,7 +38,7 @@ body header .navbar .nav-link, body header .scrolled .nav-link, body header .not
   font-weight: 500;
 }
 body header .navbar .nav-link:hover, body header .scrolled .nav-link:hover, body header .notscrolled .nav-link:hover, body header .navbar .dropdown-item:hover, body header .scrolled .dropdown-item:hover, body header .notscrolled .dropdown-item:hover {
-  color: #5438dc;
+  color: #8d8d8d;
 }
 body header .navbar .dropdown-toggle, body header .scrolled .dropdown-toggle, body header .notscrolled .dropdown-toggle {
   color: #171219;
@@ -73,9 +71,86 @@ body header .scrolled {
   -moz-box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1);
   padding: 0.1rem 2rem;
 }
+body header .arrow {
+  position: absolute;
+  bottom: 45px;
+  left: 50%;
+  transform: translate(-50%);
+  animation: MoveUpDown 1.5s linear infinite;
+}
+body header .contact {
+  background-color: #fcfcfc;
+}
+body header .contact .contactbox {
+  height: 100vh;
+}
+body header .contact .contactbox .row {
+  height: 100%;
+}
+body header .contact .contactbox .title .row {
+  height: auto;
+}
+body header .contact .contactbox .list-group {
+  text-align: center;
+}
+body header .contact .contactbox .list-group-item {
+  padding: 0.5rem 1rem;
+  color: #171219;
+  text-decoration: none;
+  background-color: none;
+  border: none;
+}
+body header .contact .contactbox .list-group-item .list-group-horizontal {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+body header .contact .contactbox a {
+  text-decoration: none;
+}
+body header .contact .contactbox .logo {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px;
+}
+body header .contact .contactbox form {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  body header .contact .contactbox img {
+    height: 100vh;
+  }
+  body header .contact .contactbox form {
+    width: 85%;
+  }
+  body header .contact .contactbox form textarea {
+    height: 150px;
+    resize: none;
+  }
+  body header .contact .contactbox .form-control {
+    background-color: #f0f0f0;
+    color: #171219;
+    background-clip: padding-box;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  body header .contact .contactbox .form-control:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+body header .contact .contactbox button {
+  background-color: #ffbd00;
+  color: #fcfcfc;
+  border: none;
+}
+body header .contact .contactbox button:hover {
+  background-color: #e0a500;
+}
 body main {
   background-color: #fcfcfc;
-  padding-bottom: 5px;
 }
 body .main {
   background-color: #171219;
@@ -84,11 +159,14 @@ body .main {
   border-radius: 0 0 0.5rem 0.5rem;
 }
 body .title {
-  padding: 10vh 0 5vh;
+  padding: 15vh 0 5vh;
   text-align: center;
 }
 body .title h1 {
-  font-size: 4rem;
+  font-size: 300%;
+}
+body .title .gray {
+  color: #8d8d8d;
 }
 body .title .titlelinks {
   margin: 2% 0 0;
@@ -100,9 +178,6 @@ body .title .titlelinks a {
 }
 body .title .titlelinks a:hover {
   color: #7f72f8;
-}
-body .title .titlelinks .gray {
-  color: #8d8d8d;
 }
 body .imgbox {
   background-color: #fcfcfc;
@@ -146,8 +221,20 @@ body #riportview {
 body #travelview {
   display: none;
 }
+body #contactview {
+  display: none;
+}
 body .up {
   text-align: center;
+}
+
+@keyframes MoveUpDown {
+  0%, 100% {
+    bottom: 35px;
+  }
+  50% {
+    bottom: 45px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
