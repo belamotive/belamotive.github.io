@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Open+Sans:wght@300;400;500;700&family=Yellowtail&display=swap");
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+}
+body header {
+  background-color: #1c1c1c;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  min-height: 150px;
+  justify-content: space-around;
+}
+@media (min-width: 768px) {
+  body header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 35px;
+  }
+}
+@media (min-width: 1366px) {
+  body header {
+    padding: 35px 150px;
+  }
+}
+@media (min-width: 1499px) {
+  body header {
+    padding: 35px 260px;
+    min-height: 190px;
+    align-items: flex-end;
+  }
+}
+body header .logo-box p {
+  margin: 0;
+  padding: 0;
+}
+body header .logo-box .logo {
+  font-family: "Cambo", serif;
+  font-size: 2.5rem;
+  margin-bottom: -5px;
+}
+body header .logo-box .logo-sub {
+  color: #888888;
+  font-size: 0.65rem;
+}
+body header .search {
+  width: 100%;
+  display: flex;
+}
+body header .search input {
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #1c1c1c;
+  padding: 10px 13px;
+  border: 1px solid #3e3e3e;
+  border-radius: 2px;
+  margin-right: 5px;
+}
+body header .search input::placeholder {
+  color: #6b6b6b;
+  font-size: 0.75rem;
+}
+body header .search button {
+  padding: 10px 15px;
+  color: white;
+  background-color: #3e3e3e;
+  border: none;
+  border-radius: 15px;
+}
+@media (min-width: 768px) {
+  body header .search {
+    width: auto;
+  }
+}
+@media (min-width: 1499px) {
+  body header .search {
+    margin-bottom: 65px;
+  }
+}
+body .hero-section {
+  background-image: linear-gradient(to top, #02142c, #d4ebff);
+  background-image: url("/img/Layer 117.png");
+  background-size: cover;
+  height: 45vh;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media (min-width: 768px) {
+  body .hero-section {
+    padding-right: 100px;
+  }
+}
+@media (min-width: 1366px) {
+  body .hero-section {
+    padding-right: 300px;
+    height: 55vh;
+  }
+}
+@media (min-width: 1499px) {
+  body .hero-section {
+    padding-right: 450px;
+  }
+}
+body .hero-section h1,
+body .hero-section h2 {
+  font-family: "Cambo", serif;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+}
+body .hero-section .hero-header,
+body .hero-section .hero-sub {
+  padding: 10px 25px;
+  display: flex;
+}
+body .hero-section .hero-header {
+  font-size: 1.3rem;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+body .hero-section .hero-sub {
+  font-size: 1rem;
+  background-color: rgba(4, 32, 62, 0.75);
+}
+@media (min-width: 768px) {
+  body .hero-section .hero-sub {
+    margin-right: 85px;
+  }
+}
+body main {
+  background-color: #cdcdcd;
+  padding-top: 200px;
+}
+body main .cards {
+  margin-top: -250px;
+  display: flex;
+  gap: 15px;
+  flex-direction: row;
+  overflow: scroll;
+  padding: 15px;
+}
+@media (min-width: 768px) {
+  body main .cards {
+    padding: 35px;
+    margin-top: -275px;
+  }
+}
+@media (min-width: 1366px) {
+  body main .cards {
+    padding: 35px 150px;
+    margin-top: -300px;
+  }
+}
+@media (min-width: 1499px) {
+  body main .cards {
+    padding: 35px 260px;
+    margin-top: -300px;
+  }
+}
+body main .cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 50px 35px;
+  text-align: center;
+  background-color: #f1f1f1;
+  min-width: 220px;
+}
+body main .cards .card .card-letter {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 700;
+}
+body main .cards .card .card-sub {
+  font-family: "Yellowtail", cursive;
+  font-size: 2rem;
+  margin: 10px 0 15px;
+}
+body main .cards .card .card-p-header {
+  color: #529ec3;
+  margin: 0;
+}
+body main .cards .card .card-p {
+  margin: 0;
+}
+body main .cards .card .card-button {
+  border: none;
+  padding: 12px 30px;
+  background-image: linear-gradient(to top, #26678b, #5899bd);
+  font-family: "Cambo", serif;
+  font-size: 1.2rem;
+  color: white;
+  border-radius: 25px;
+  margin-top: 20px;
+}
+@media (min-width: 768px) {
+  body main .cards .card {
+    min-width: 185px;
+  }
+}
+@media (min-width: 1366px) {
+  body main .cards .card {
+    min-width: 150px;
+  }
+}
+body main .cards .card:hover {
+  background-image: linear-gradient(to top, #1f1f1f, #393939);
+  color: #727272;
+}
+body main .cards .card:hover .card-letter, body main .cards .card:hover .card-sub {
+  color: white;
+}
+body main .cards .card:nth-child(even) {
+  border-radius: 0 35px 0 35px;
+}
+body main .cards .card:nth-child(odd) {
+  border-radius: 35px 0 35px 0;
+}
+body main .gray-box {
+  margin: 15px;
+  display: flex;
+  padding: 15px;
+  background-image: linear-gradient(to top, #a6a6a6, #b8b8b8);
+  color: white;
+  border-radius: 35px;
+}
+@media (min-width: 768px) {
+  body main .gray-box {
+    margin: 0 35px;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-left: 175px;
+  }
+}
+@media (min-width: 1366px) {
+  body main .gray-box {
+    margin: 0 150px;
+    padding-left: 275px;
+  }
+}
+@media (min-width: 1499px) {
+  body main .gray-box {
+    margin: 0 260px;
+    padding-left: 375px;
+  }
+}
+body main .gray-box .gray-box-p {
+  padding: 15px;
+}
+body main .social-icon-set {
+  padding: 15px 15px 30px;
+  display: flex;
+  gap: 15px;
+}
+@media (min-width: 768px) {
+  body main .social-icon-set {
+    padding: 35px;
+  }
+}
+@media (min-width: 1366px) {
+  body main .social-icon-set {
+    padding: 35px 150px;
+  }
+}
+@media (min-width: 1499px) {
+  body main .social-icon-set {
+    padding: 35px 260px;
+  }
+}
+body footer {
+  background-image: linear-gradient(to top, #252525, #2a2a2a);
+  height: 185px;
+}
+
+/*# sourceMappingURL=style.css.map */

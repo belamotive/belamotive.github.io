@@ -1,0 +1,302 @@
+@import url("https://fonts.googleapis.com/css2?family=Cambo&family=Open+Sans:wght@300;400;500;700&family=Yellowtail&display=swap");
+
+// font-family: 'Yellowtail', cursive;
+// font-family: 'Cambo', serif;
+
+$black: #1c1c1c;
+$almostblack: #323232;
+$lightgray: #888888;
+$mediumgray: #6b6b6b;
+$darkgray: #3e3e3e;
+$lightblue: #529ec3;
+$darkblue: #04203e;
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+
+  header {
+    background-color: $black;
+    color: white;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    min-height: 150px;
+    justify-content: space-around;
+
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      padding: 35px;
+    }
+
+    @media (min-width: 1366px) {
+      padding: 35px 150px;
+    }
+
+    @media (min-width: 1499px) {
+      padding: 35px 260px;
+      min-height: 190px;
+      align-items: flex-end;
+    }
+
+    .logo-box {
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      .logo {
+        font-family: "Cambo", serif;
+        font-size: 2.5rem;
+        margin-bottom: -5px;
+      }
+
+      .logo-sub {
+        color: $lightgray;
+        font-size: 0.65rem;
+      }
+    }
+
+    .search {
+      width: 100%;
+      display: flex;
+
+      input {
+        width: 100%;
+        box-sizing: border-box;
+        background-color: $black;
+        padding: 10px 13px;
+        border: 1px solid $darkgray;
+        border-radius: 2px;
+        margin-right: 5px;
+      }
+
+      input::placeholder {
+        color: $mediumgray;
+        font-size: 0.75rem;
+      }
+
+      button {
+        padding: 10px 15px;
+        color: white;
+        background-color: $darkgray;
+        border: none;
+        border-radius: 15px;
+      }
+
+      @media (min-width: 768px) {
+        width: auto;
+      }
+
+      @media (min-width: 1499px) {
+        margin-bottom: 65px;
+      }
+    }
+  }
+
+  .hero-section {
+    background-image: linear-gradient(to top, #02142c, #d4ebff);
+    background-image: url("/img/Layer\ 117.png");
+    background-size: cover;
+    height: 45vh;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+
+    @media (min-width: 768px) {
+      padding-right: 100px;
+    }
+
+    @media (min-width: 1366px) {
+      padding-right: 300px;
+      height: 55vh;
+    }
+
+    @media (min-width: 1499px) {
+      padding-right: 450px;
+    }
+
+    h1,
+    h2 {
+      font-family: "Cambo", serif;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+
+    .hero-header,
+    .hero-sub {
+      padding: 10px 25px;
+      display: flex;
+    }
+
+    .hero-header {
+      font-size: 1.3rem;
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+
+    .hero-sub {
+      font-size: 1rem;
+      background-color: rgba(4, 32, 62, 0.75);
+
+      @media (min-width: 768px) {
+        margin-right: 85px;
+      }
+    }
+  }
+
+  main {
+    background-color: #cdcdcd;
+    padding-top: 200px;
+
+    .cards {
+      margin-top: -250px;
+      display: flex;
+      gap:15px;
+      flex-direction: row;
+      overflow: scroll;
+      padding: 15px;
+
+      @media (min-width: 768px) {
+        padding: 35px;
+        margin-top: -275px;
+      }
+
+      @media (min-width: 1366px) {
+        padding: 35px 150px;
+        margin-top: -300px;
+      }
+
+      @media (min-width: 1499px) {
+        padding: 35px 260px;
+        margin-top: -300px;
+      }
+
+      .card {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 35px;
+        text-align: center;
+        background-color: #f1f1f1;
+        min-width: 220px;
+
+        .card-letter {
+          font-size: 4rem;
+          margin: 0;
+          font-weight: 700;
+        }
+
+        .card-sub {
+          font-family: "Yellowtail", cursive;
+          font-size: 2rem;
+          margin: 10px 0 15px;
+        }
+
+        .card-p-header {
+          color: $lightblue;
+          margin: 0;
+        }
+
+        .card-p {
+          margin: 0;
+        }
+
+        .card-button {
+          border: none;
+          padding: 12px 30px;
+          background-image: linear-gradient(to top, #26678b, #5899bd);
+          font-family: "Cambo", serif;
+          font-size: 1.2rem;
+          color: white;
+          border-radius: 25px;
+          margin-top: 20px;
+        }
+
+        @media (min-width: 768px) {
+          min-width: 185px;
+        }
+
+        @media (min-width: 1366px) {
+          min-width: 150px;
+        }
+      }
+
+      .card:hover {
+        background-image: linear-gradient(to top, #1f1f1f, #393939);
+        color: #727272;
+
+        .card-letter, .card-sub {
+          color: white;
+        }
+      }
+
+      .card:nth-child(even) {
+        border-radius: 0 35px 0 35px;
+      }
+
+      .card:nth-child(odd) {
+        border-radius: 35px 0 35px 0;
+      }
+    }
+
+    .gray-box {
+      margin: 15px;
+      display: flex;
+      padding: 15px;
+      background-image: linear-gradient(to top, #a6a6a6, #b8b8b8);
+      color: white;
+      border-radius: 35px;
+
+      @media (min-width: 768px) {
+        margin: 0 35px;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding-left: 175px;
+      }
+
+      @media (min-width: 1366px) {
+        margin: 0 150px;
+        padding-left: 275px;
+      }
+
+      @media (min-width: 1499px) {
+        margin: 0 260px;
+        padding-left: 375px;
+      }
+
+      .gray-box-p {
+        padding: 15px;
+      }
+    }
+
+    .social-icon-set {
+      padding: 15px 15px 30px;
+      display: flex;
+      gap: 15px;
+
+      @media (min-width: 768px) {
+        padding: 35px;
+      }
+
+      @media (min-width: 1366px) {
+        padding: 35px 150px;
+      }
+
+      @media (min-width: 1499px) {
+        padding: 35px 260px;
+      }
+    }
+  }
+
+  footer {
+    background-image: linear-gradient(to top, #252525, #2a2a2a);
+    height: 185px;
+  }
+}
